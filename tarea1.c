@@ -18,8 +18,14 @@ int main(int argc, char const *argv[])
 
     printf("ingresa el incremento: \n");
     scanf("%d",&incremento);
-
-    if (num1>num2)
+    
+    if (incremento<=0)
+    {
+        printf("el incremento es 0 o es un numero negativo, no se puede realizar el incremento");
+    }
+    else
+    {
+        if (num1>num2)
     {
         printf("Error: La serie no se puede generar porque el numero inicial es mayor al numero final");
     }
@@ -30,6 +36,9 @@ int main(int argc, char const *argv[])
         printf("%d\n", i);
     }
     }
+    }
+    
+    
     
     return 0;
 }
